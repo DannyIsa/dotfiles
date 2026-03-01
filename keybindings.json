@@ -13,7 +13,6 @@
         "command": "workbench.view.explorer",
         "when": "!filesExplorerFocus"
     },
-
     {
         "key": "enter",
         "command": "list.select",
@@ -26,7 +25,21 @@
     },
     {
         "key": "cmd+b",
-        "command": "editor.action.revealDefinition"
+        "command": "editor.action.goToReferences",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "-simpleBrowser.show"
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "cmd+shift+b",
+        "command": "editor.action.revealDefinition",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+tab",
@@ -36,6 +49,16 @@
     {
         "key": "ctrl+shift+tab",
         "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward",
         "when": "editorTextFocus"
     }
 ]
